@@ -117,7 +117,7 @@
             var img = [0,0,0,0];
 
             for (var i=0; i<post.length; i++) {
-                var jsallow = post[i].allow_js?1:0;
+                var jsallow = (post[i].allow_js == true)?1:0;
                 var imgallow = post[i].allow_images?1:0;
                 var cssallow = post[i].allow_css?1:0;
                 var lang = post[i].language;
@@ -169,19 +169,19 @@
                 text : "Javascript allowed",
                 'font-family': "Georgia",
                 'legend-marker': { 'background-color' : 'red'},
-                styles: [ "red", "red", "red"]
+                styles: [ "red", "red", "red", "red"]
                 },
                 { values: css,
                 text : "CSS allowed",
                 'font-family': "Georgia",
                 'legend-marker': { 'background-color' : '#ff6666'},
-                styles: [ "#ff6666", "#ff6666", "#ff6666"]
+                styles: [ "#ff6666", "#ff6666", "#ff6666", "#ff6666"]
                 },
                 { values: img,
                 text : "Images allowed",
                 'font-family': "Georgia",
                 'legend-marker': { 'background-color' : '#ff99cc'},
-                styles: [ "#ff99cc", "#ff99cc", "#ff99cc"]
+                styles: [ "#ff99cc", "#ff99cc", "#ff99cc","#ff99cc"]
                 }
             ]
             };
